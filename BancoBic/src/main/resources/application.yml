@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bic
+    username: postgres
+    password: postgres
+    driverClassName: org.postgresql.Driver
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+
+
